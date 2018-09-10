@@ -35,12 +35,27 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vgm-IN-VJ8" customClass="DYPhoneInputView">
+                                <rect key="frame" x="15" y="135" width="345" height="88"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="G8z-RN-sAS"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                        <color key="value" red="1" green="0.44705882349999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Vgm-IN-VJ8" firstAttribute="top" secondItem="102-hx-BtO" secondAttribute="bottom" constant="21" id="DZX-cO-QWg"/>
                             <constraint firstItem="102-hx-BtO" firstAttribute="leading" secondItem="5WN-2o-9EO" secondAttribute="leading" constant="12" id="Kiw-1D-LlK"/>
+                            <constraint firstAttribute="trailing" secondItem="Vgm-IN-VJ8" secondAttribute="trailing" constant="15" id="sFY-br-Osk"/>
                             <constraint firstItem="102-hx-BtO" firstAttribute="top" secondItem="NpG-9N-N8p" secondAttribute="bottom" constant="20" id="sru-w6-aNd"/>
                             <constraint firstAttribute="trailing" secondItem="102-hx-BtO" secondAttribute="trailing" constant="12" id="vHc-rM-aBc"/>
+                            <constraint firstItem="Vgm-IN-VJ8" firstAttribute="leading" secondItem="5WN-2o-9EO" secondAttribute="leading" constant="15" id="xXy-6R-yw9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tJ7-xz-OLV"/>

@@ -27,6 +27,8 @@
 		04F548DD21452223004DB738 /* country_code_ForWCO.txt in Resources */ = {isa = PBXBuildFile; fileRef = 04F548DA21452223004DB738 /* country_code_ForWCO.txt */; };
 		04F548E121452653004DB738 /* CountryCodeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F548E021452653004DB738 /* CountryCodeTool.m */; };
 		70FD53BB21460EB300D0C6F4 /* DYSearchResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70FD53BA21460EB300D0C6F4 /* DYSearchResultViewController.xib */; };
+		70FD53C02146384200D0C6F4 /* DYPhoneInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70FD53BF2146384200D0C6F4 /* DYPhoneInputView.m */; };
+		70FD53C221463EA500D0C6F4 /* DYPhoneInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70FD53C121463EA500D0C6F4 /* DYPhoneInputView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,9 @@
 		04F548DF21452653004DB738 /* CountryCodeTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountryCodeTool.h; sourceTree = "<group>"; };
 		04F548E021452653004DB738 /* CountryCodeTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountryCodeTool.m; sourceTree = "<group>"; };
 		70FD53BA21460EB300D0C6F4 /* DYSearchResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DYSearchResultViewController.xib; sourceTree = "<group>"; };
+		70FD53BE2146384200D0C6F4 /* DYPhoneInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYPhoneInputView.h; sourceTree = "<group>"; };
+		70FD53BF2146384200D0C6F4 /* DYPhoneInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYPhoneInputView.m; sourceTree = "<group>"; };
+		70FD53C121463EA500D0C6F4 /* DYPhoneInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DYPhoneInputView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +128,7 @@
 		04F4CD3221458ACE008FDC96 /* SearchVC */ = {
 			isa = PBXGroup;
 			children = (
+				70FD53BD2146380100D0C6F4 /* View */,
 				04F548DE2145262F004DB738 /* CountryCode */,
 				04F4CD3321458B4D008FDC96 /* DYSearchCountryCodeViewController.h */,
 				04F4CD3421458B4D008FDC96 /* DYSearchCountryCodeViewController.m */,
@@ -212,6 +218,16 @@
 				04F548E021452653004DB738 /* CountryCodeTool.m */,
 			);
 			path = CountryCode;
+			sourceTree = "<group>";
+		};
+		70FD53BD2146380100D0C6F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				70FD53BE2146384200D0C6F4 /* DYPhoneInputView.h */,
+				70FD53BF2146384200D0C6F4 /* DYPhoneInputView.m */,
+				70FD53C121463EA500D0C6F4 /* DYPhoneInputView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,6 +341,7 @@
 				04F548DB21452223004DB738 /* mmregioncode4client.txt in Resources */,
 				04F548AF214521F2004DB738 /* Assets.xcassets in Resources */,
 				04F548AD214521F0004DB738 /* Main.storyboard in Resources */,
+				70FD53C221463EA500D0C6F4 /* DYPhoneInputView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +367,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04F4CD3521458B4D008FDC96 /* DYSearchCountryCodeViewController.m in Sources */,
+				70FD53C02146384200D0C6F4 /* DYPhoneInputView.m in Sources */,
 				04F4CD3B21458C8B008FDC96 /* DYSearchResultViewController.m in Sources */,
 				04F4CD3F214597A9008FDC96 /* DYSearchModel.m in Sources */,
 				041DAAE82145529F00E3E20E /* DYCountryModel.m in Sources */,
@@ -535,7 +553,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dunyue.HiBabyTeacher;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dunyue.HiBabyTeacher.contrycode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "70c1dae4-0d6f-4d17-8e00-2e2f66399d4b";
 				PROVISIONING_PROFILE_SPECIFIER = "支持推送测试证书";
@@ -555,7 +573,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dunyue.HiBabyTeacher;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dunyue.HiBabyTeacher.contrycode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "70c1dae4-0d6f-4d17-8e00-2e2f66399d4b";
 				PROVISIONING_PROFILE_SPECIFIER = "支持推送测试证书";

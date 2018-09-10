@@ -80,7 +80,7 @@
                                      @"246",@"DG",@"212",@"EH", @"3491", @"IC", @"34", @"EA",
                                      @"11", @"HM",@"1", @"UM",@"47", @"BV",@"11",@"CP",nil];
     NSMutableArray * countriesArray = [[NSMutableArray alloc] init];
-    NSLocale *locale = [NSLocale localeWithLocaleIdentifier:@"vi"];
+    NSLocale *locale = [NSLocale localeWithLocaleIdentifier:@"zh-CN"];
     NSArray *countryArray = [NSLocale ISOCountryCodes];
 
     for (NSString *countryCode in countryArray) {
