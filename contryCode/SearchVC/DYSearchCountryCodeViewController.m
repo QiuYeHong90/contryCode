@@ -44,8 +44,33 @@
 -(void)initUI
 {
     
+    [self setNavStyles];
+    
     [self pushViewController:[DYSearchViewController new] animated:NO];
 }
+
+//设置导航条样式
+- (void)setNavStyles{
+//    UINavigationBar *bar = [UINavigationBar appearance];
+    UINavigationBar *bar  = self.navigationBar;
+    //设置显示的颜色 RGB(63,180,115)
+    //    bar.barTintColor = [UIColor colorWithRed:62/255.0 green:173/255.0 blue:176/255.0 alpha:1.0];
+    bar.barTintColor = [UIColor colorWithRed:63/255.0 green:180/255.0 blue:115/255.0 alpha:1.0];
+    
+    //设置字体颜色
+    bar.tintColor = [UIColor whiteColor];//左右两边字体颜色
+    [bar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+    
+    //替换原来的返回图片
+    //    bar.backIndicatorImage = [UIImage imageNamed:@"icon_back"];
+    //    bar.backIndicatorTransitionMaskImage = [UIImage imageNamed:@"icon_back"];
+    
+    [self.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationBar setShadowImage:nil];
+}
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

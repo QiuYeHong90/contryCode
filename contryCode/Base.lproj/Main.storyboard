@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0ON-rJ-3jK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0ON-rJ-3jK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,6 +13,10 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NpG-9N-N8p"/>
+                        <viewControllerLayoutGuide type="bottom" id="FUP-Bb-Wo3"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5WN-2o-9EO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -26,9 +29,19 @@
                                     <action selector="popVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ntq-vK-OXo"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="102-hx-BtO">
+                                <rect key="frame" x="12" y="84" width="351" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="8SL-gm-zOS"/>
+                        <constraints>
+                            <constraint firstItem="102-hx-BtO" firstAttribute="leading" secondItem="5WN-2o-9EO" secondAttribute="leading" constant="12" id="Kiw-1D-LlK"/>
+                            <constraint firstItem="102-hx-BtO" firstAttribute="top" secondItem="NpG-9N-N8p" secondAttribute="bottom" constant="20" id="sru-w6-aNd"/>
+                            <constraint firstAttribute="trailing" secondItem="102-hx-BtO" secondAttribute="trailing" constant="12" id="vHc-rM-aBc"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tJ7-xz-OLV"/>
                     <connections>
@@ -45,7 +58,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="934" y="-564"/>
+            <point key="canvasLocation" x="933.60000000000002" y="-564.46776611694156"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="inX-Ap-QlH">

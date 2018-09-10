@@ -6,8 +6,11 @@
 //  Copyright © 2018年 袁书辉. All rights reserved.
 //
 
+#import "DYSearchModel.h"
 #import <UIKit/UIKit.h>
 
-@interface DYSearchResultViewController : UIViewController
-
+@interface DYSearchResultViewController : UIViewController<UISearchResultsUpdating>
+@property (strong, nonatomic) UINavigationController *nav;
+@property (strong, nonatomic) UISearchBar *searchBar;
+@property (strong, nonatomic) NSMutableArray <DYCountryModel *>*dataListArry;
 @end
